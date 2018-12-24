@@ -1,0 +1,46 @@
+Source: discount
+Section: text
+Priority: optional
+Maintainer: Alessandro Ghedini <ghedo@debian.org>
+Build-Depends: debhelper (>= 11)
+Standards-Version: 4.2.0
+Vcs-Git: https://salsa.debian.org/debian/discount.git
+Vcs-Browser: https://salsa.debian.org/debian/discount
+Homepage: http://www.pell.portland.or.us/~orc/Code/discount/
+
+Package: discount
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libmarkdown2 (= ${binary:Version})
+Conflicts: markdown, libtext-markdown-perl
+Multi-Arch: foreign
+Description: implementation of the Markdown markup language in C
+ Discount is an implementation of John Gruber's Markdown markup language. It
+ implements all of the language described in the Markdown syntax document and
+ passes the Markdown 1.0 test suite.
+ .
+ This package provides the discount executables.
+
+Package: libmarkdown2
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
+Description: implementation of the Markdown markup language in C (library)
+ Discount is an implementation of John Gruber's Markdown markup language. It
+ implements all of the language described in the Markdown syntax document and
+ passes the Markdown 1.0 test suite.
+ .
+ This package provides the libmarkdown generated from discount.
+
+Package: libmarkdown2-dev
+Section: libdevel
+Architecture: any
+Depends: ${misc:Depends}, libmarkdown2 (= ${binary:Version})
+Multi-Arch: same
+Description: implementation of the Markdown markup language in C (dev files)
+ Discount is an implementation of John Gruber's Markdown markup language. It
+ implements all of the language described in the Markdown syntax document and
+ passes the Markdown 1.0 test suite.
+ .
+ This package provides the development file for libmarkdown.

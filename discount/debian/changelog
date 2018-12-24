@@ -1,0 +1,221 @@
+discount (2.2.4-1) unstable; urgency=medium
+
+  * New upstream release
+    - Fix several heap buffer overflows as per CVE-2018-11468, CVE-2018-11503,
+      CVE-2018-11504 and CVE-2018-12495 (Closes: #901912)
+  * Update symbols file
+  * Bump Standards-Version to 4.2.0 (no changes needed)
+  * Drop 01_honour-build-flags.patch (not needed anymore)
+  * Enable github-style checkboxes in lists
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Sat, 11 Aug 2018 12:46:55 +0100
+
+discount (2.2.3b8-2) unstable; urgency=medium
+
+  * Bump Standards-Version to 4.1.1 (no changes needed)
+  * Install libmarkdown.pc in libmarkdown2-dev
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Tue, 17 Oct 2017 22:19:31 +0100
+
+discount (2.2.3b8-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump Standards-Version to 4.1.0 (no changes needed)
+  * Mark discount Multi-Arch: foreign (Closes: #875905)
+  * Update 03_fix-typo.patch
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Wed, 20 Sep 2017 09:33:51 +0100
+
+discount (2.2.2-1) unstable; urgency=medium
+
+  * New upstream release
+  * Refresh patches
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Thu, 19 Jan 2017 22:42:00 +0000
+
+discount (2.2.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Refresh patches
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Sat, 19 Nov 2016 16:29:22 +0000
+
+discount (2.2.0+git20160802-1) unstable; urgency=medium
+
+  * New upstream release
+    - Fix FTBFS on architectures where char is unsigned (Closes: #826197)
+  * Drop 03_fix-tests.patch (merged upstream)
+  * Properly label license texts.
+    Thanks to Francesco Poli for the patch (Closes: #826249)
+  * Add 03_fix-typo.patch to fix spelling-error-in-manpage
+  * Drop 02_fix-makepage-man.patch
+    The documentation mismatch was caused by a bug in the code,
+    not the manpage (Closes: #813977)
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Tue, 02 Aug 2016 16:55:25 +0100
+
+discount (2.2.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Drop 02_fix-email-mangling.patch (merged upstream)
+  * Refresh 01_honour-build-flags.patch
+  * Fix example usage in the makepage man (Closes: #813977)
+  * Add patch to fix tests
+  * Fix spelling-error-in-description
+  * Bump Standards-Version to 3.9.8 (no changes needed)
+  * Update Vcs links
+  * Drop -dbg package
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Sat, 23 Apr 2016 13:07:08 +0100
+
+discount (2.1.8-2) unstable; urgency=medium
+
+  * Add 02_fix-email-mangling.patch to fix email mangling (Closes: #782315)
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Fri, 10 Apr 2015 14:42:53 +0200
+
+discount (2.1.8-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump Standards-Version to 3.9.6 (no changes needed)
+  * Update upstream author email address
+  * Enable deterministic email mangling (Closes: #762622)
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Sat, 31 Jan 2015 21:33:36 +0100
+
+discount (2.1.7-1) unstable; urgency=low
+
+  * New upstream release
+    - Fix non-ASCII text handling inside emphasis (Closes: #722305)
+  * Fix license name in d/copyright
+  * Fix copyright for toc.c
+  * Fix lintian vcs-field-not-canonical
+  * Use GitHub URL in watch file for now
+  * Refresh patch
+  * Fix license text in d/copyright
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Sat, 19 Oct 2013 14:34:54 +0200
+
+discount (2.1.6-2) unstable; urgency=low
+
+  * Enable both Discount and Extra definition lists (Closes: #705732)
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Sun, 28 Apr 2013 22:02:02 +0200
+
+discount (2.1.6-1) unstable; urgency=low
+
+  * New upstream release
+  * Bump Standards-Version to 3.9.4 (no changes needed)
+  * Minor improvements to the packages' descriptions
+  * Change upstream license from BSD 4-clause to BSD 3-clause
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Sun, 17 Mar 2013 16:49:57 +0100
+
+discount (2.1.5a-1) unstable; urgency=low
+
+  * New upstream release
+  * Refresh 01_honour-build-flags.patch
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Thu, 09 Aug 2012 16:01:47 +0200
+
+discount (2.1.5-1) unstable; urgency=low
+
+  * New upstream release
+  * Refresh 01_honour-build-flags.patch
+  * Update symbols file
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Wed, 08 Aug 2012 21:38:30 +0200
+
+discount (2.1.3-3) unstable; urgency=low
+
+  * Install mkdio.h in a Multi-Arch path (Closes: #676240)
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Tue, 05 Jun 2012 19:30:28 +0200
+
+discount (2.1.3-2) unstable; urgency=low
+
+  * Update debian/copyright format as in Debian Policy 3.9.3
+  * Bump Standards-Version to 3.9.3
+  * Bump debhelper compat level to 9
+    - Make *.install files executable to generate multi-arch path
+  * Honour the CPPFLAGS variable too during build
+  * Email change: Alessandro Ghedini -> ghedo@debian.org
+  * Add Multi-Arch headers
+  * Add libmarkdown2-dbg package
+  * Do not use GitHub URL in debian/watch
+  * Add 01_honour-build-flags.patch
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Sun, 03 Jun 2012 16:49:41 +0200
+
+discount (2.1.3-1) unstable; urgency=low
+
+  * New upstream release
+    - <br> is not a block-level html element (Closes: #656122)
+  * Use GitHub URL in debian/watch
+
+ -- Alessandro Ghedini <al3xbio@gmail.com>  Wed, 18 Jan 2012 20:40:30 +0100
+
+discount (2.1.2-2) unstable; urgency=low
+
+  * Install correct header file mkdio.h in -dev package
+
+ -- Alessandro Ghedini <al3xbio@gmail.com>  Fri, 28 Oct 2011 12:40:27 +0200
+
+discount (2.1.2-1) unstable; urgency=low
+
+  * New upstream release
+  * Bump debhlper compat level to 8
+  * Add librarian.sh to debian/clean
+  * Manually enable additional features: id anchor, github tags, fenced code
+  * Do not build custom memory allocation functions (for debug only)
+
+ -- Alessandro Ghedini <al3xbio@gmail.com>  Sun, 02 Oct 2011 19:22:10 +0200
+
+discount (2.1.1.3-1) unstable; urgency=low
+
+  * New upstream release
+  * Update *.symbols file
+  * Add mktags and blocktags to debian/clean
+  * Explicitly list manpages to install
+
+ -- Alessandro Ghedini <al3xbio@gmail.com>  Wed, 03 Aug 2011 11:14:34 +0200
+
+discount (2.1.0-1) unstable; urgency=low
+
+  * New upstream release
+  * Update debian/changelog:
+    - Trim leading './' from files path
+    - Add file pgm_options.c to copyright
+
+ -- Alessandro Ghedini <al3xbio@gmail.com>  Wed, 13 Jul 2011 20:54:07 +0200
+
+discount (2.0.9-1) unstable; urgency=low
+
+  * New upstream release
+  * Drop fix-spelling-error patch (merged upstream)
+  * Bump Standards-Version to 3.9.2 (no changes needed)
+
+ -- Alessandro Ghedini <al3xbio@gmail.com>  Wed, 04 May 2011 19:19:50 +0200
+
+discount (2.0.8-1) unstable; urgency=low
+
+  * New upstream release
+  * Drop fix-manpages-errors patch (merged upstream)
+  * Update symbols file for libmarkdown2
+  * Add fix-spelling-error patch
+  * Enable all stable optional features
+
+ -- Alessandro Ghedini <al3xbio@gmail.com>  Thu, 17 Mar 2011 14:59:57 +0100
+
+discount (2.0.6-1) unstable; urgency=low
+
+  * New upstream release
+  * Update symbols file for libmarkdown2
+
+ -- Alessandro Ghedini <al3xbio@gmail.com>  Sat, 19 Feb 2011 18:40:54 +0100
+
+discount (2.0.4-1) unstable; urgency=low
+
+  * Initial release (Closes: #608709)
+
+ -- Alessandro Ghedini <al3xbio@gmail.com>  Fri, 14 Jan 2011 17:21:25 +0100

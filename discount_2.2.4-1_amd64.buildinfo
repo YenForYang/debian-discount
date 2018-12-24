@@ -1,0 +1,190 @@
+Format: 1.0
+Source: discount
+Binary: discount libmarkdown2 libmarkdown2-dev
+Architecture: amd64
+Version: 2.2.4-1
+Checksums-Md5:
+ a20c4ae5172643e3239edf79201d71ce 33332 discount-dbgsym_2.2.4-1_amd64.deb
+ b4a8a5ed8917ac409c159af1418b7a08 32104 discount_2.2.4-1_amd64.deb
+ 4d74e236b551dd2d9ae67f6cff69213e 98168 libmarkdown2-dbgsym_2.2.4-1_amd64.deb
+ 9de206de3edf10c1fa484594f3ad16ce 6428 libmarkdown2-dev_2.2.4-1_amd64.deb
+ 257e05e31cb68234d81bbbd07ed254d4 100740 libmarkdown2_2.2.4-1_amd64.deb
+Checksums-Sha1:
+ 202a88fe2dc2b82907a2476a0e9564d1045869a3 33332 discount-dbgsym_2.2.4-1_amd64.deb
+ 32b95dd3a949e6d40395d009a0d153e6b541282d 32104 discount_2.2.4-1_amd64.deb
+ 0d4d261e71dbc56d776a4b4c2e6a6785cae9bcfb 98168 libmarkdown2-dbgsym_2.2.4-1_amd64.deb
+ ce63ca287342fd4aaa97aba07f36685d638d8a79 6428 libmarkdown2-dev_2.2.4-1_amd64.deb
+ 04e80e917ec148ce69ddbf7d24187f687cbc17d2 100740 libmarkdown2_2.2.4-1_amd64.deb
+Checksums-Sha256:
+ d63cba158f390a3af02ec8667de6a343a46fd47b48053123f4b710d345a555c9 33332 discount-dbgsym_2.2.4-1_amd64.deb
+ cd64a8517b7234041396afe6e3d6a48c3c1ee9c5449ef93c0d8923708c2d13c5 32104 discount_2.2.4-1_amd64.deb
+ a679dbbff3d8817b41719bab76edc1f245573de851cf459946f2f230f63ecf4c 98168 libmarkdown2-dbgsym_2.2.4-1_amd64.deb
+ 166e744784032f9c174fd3ef2302fa653475c9bb0f33e5f45104a36026e3a6a8 6428 libmarkdown2-dev_2.2.4-1_amd64.deb
+ 3feb895a26c492566d000f8b8c686d790ccd96efcc40c54a6f98cc4ace26e683 100740 libmarkdown2_2.2.4-1_amd64.deb
+Build-Origin: Debian
+Build-Architecture: amd64
+Build-Date: Mon, 24 Dec 2018 07:34:41 +0100
+Installed-Build-Depends:
+ autoconf (= 2.69-11),
+ automake (= 1:1.16.1-4),
+ autopoint (= 0.19.8.1-2),
+ autotools-dev (= 20180224.1),
+ base-files (= 10.1),
+ base-passwd (= 3.5.45),
+ bash (= 4.4.18-3.1),
+ binutils (= 2.31.1-10),
+ binutils-common (= 2.31.1-10),
+ binutils-x86-64-linux-gnu (= 2.31.1-10),
+ bsdmainutils (= 11.1.2+b1),
+ bsdutils (= 1:2.32.1-0.1),
+ build-essential (= 12.5),
+ bzip2 (= 1.0.6-9),
+ coreutils (= 8.30-1),
+ cpp (= 4:8.2.0-2),
+ cpp-7 (= 7.3.0-30),
+ cpp-8 (= 8.2.0-9),
+ dash (= 0.5.10.2-2),
+ debconf (= 1.5.69),
+ debhelper (= 11.5.4),
+ debianutils (= 4.8.6),
+ dh-autoreconf (= 19),
+ dh-strip-nondeterminism (= 0.45.0-1),
+ diffutils (= 1:3.6-1),
+ dpkg (= 1.19.2),
+ dpkg-dev (= 1.19.2),
+ dwz (= 0.12-2),
+ fdisk (= 2.32.1-0.1),
+ file (= 1:5.35-1),
+ findutils (= 4.6.0+git+20181018-1),
+ g++ (= 4:8.2.0-2),
+ g++-8 (= 8.2.0-9),
+ gawk (= 1:4.2.1+dfsg-1),
+ gcc (= 4:8.2.0-2),
+ gcc-7 (= 7.3.0-30),
+ gcc-7-base (= 7.3.0-30),
+ gcc-8 (= 8.2.0-9),
+ gcc-8-base (= 8.2.0-9),
+ gettext (= 0.19.8.1-2),
+ gettext-base (= 0.19.8.1-2),
+ grep (= 3.1-2),
+ groff-base (= 1.22.3-10),
+ gzip (= 1.9-2),
+ hostname (= 3.21),
+ init-system-helpers (= 1.56),
+ intel-comp-ps-ss-bec-19.0.1-144 (= 19.0.1-144),
+ intltool-debian (= 0.35.0+20060710.4),
+ libacl1 (= 2.2.52-3+b1),
+ libarchive-zip-perl (= 1.64-1),
+ libasan4 (= 7.3.0-30),
+ libasan5 (= 8.2.0-9),
+ libatomic1 (= 8.2.0-9),
+ libattr1 (= 1:2.4.47-2+b2),
+ libaudit-common (= 1:2.8.4-3),
+ libaudit1 (= 1:2.8.4-3),
+ libbinutils (= 2.31.1-10),
+ libblkid1 (= 2.32.1-0.1),
+ libbsd0 (= 0.9.1-1),
+ libbz2-1.0 (= 1.0.6-9),
+ libc-bin (= 2.28-2),
+ libc-dev-bin (= 2.28-2),
+ libc6 (= 2.28-2),
+ libc6-dev (= 2.28-2),
+ libcap-ng0 (= 0.7.9-1),
+ libcc1-0 (= 8.2.0-9),
+ libcilkrts5 (= 7.3.0-30),
+ libcroco3 (= 0.6.12-2),
+ libdb5.3 (= 5.3.28+dfsg1-0.2),
+ libdebconfclient0 (= 0.245),
+ libdpkg-perl (= 1.19.2),
+ libelf1 (= 0.175-1),
+ libfdisk1 (= 2.32.1-0.1),
+ libffi6 (= 3.2.1-9),
+ libfile-stripnondeterminism-perl (= 0.45.0-1),
+ libgcc-7-dev (= 7.3.0-30),
+ libgcc-8-dev (= 8.2.0-9),
+ libgcc1 (= 1:8.2.0-9),
+ libgcrypt20 (= 1.8.4-3),
+ libgdbm-compat4 (= 1.18.1-2),
+ libgdbm6 (= 1.18.1-2),
+ libglib2.0-0 (= 2.58.1-2),
+ libgmp10 (= 2:6.1.2+dfsg-3),
+ libgomp1 (= 8.2.0-9),
+ libgpg-error0 (= 1.32-3),
+ libicu63 (= 63.1-4),
+ libisl19 (= 0.20-2),
+ libitm1 (= 8.2.0-9),
+ liblsan0 (= 8.2.0-9),
+ liblz4-1 (= 1.8.2-1),
+ liblzma5 (= 5.2.4-1),
+ libmagic-mgc (= 1:5.35-1),
+ libmagic1 (= 1:5.35-1),
+ libmount1 (= 2.32.1-0.1),
+ libmpc3 (= 1.1.0-1),
+ libmpfr6 (= 4.0.1-1),
+ libmpx2 (= 8.2.0-9),
+ libncursesw6 (= 6.1+20181013-1),
+ libpam-modules (= 1.1.8-3.8),
+ libpam-modules-bin (= 1.1.8-3.8),
+ libpam-runtime (= 1.1.8-3.8),
+ libpam0g (= 1.1.8-3.8),
+ libpcre3 (= 2:8.39-11),
+ libperl5.28 (= 5.28.1-1),
+ libpipeline1 (= 1.5.0-2),
+ libquadmath0 (= 8.2.0-9),
+ libreadline7 (= 7.0-5),
+ libseccomp2 (= 2.3.3-4),
+ libselinux1 (= 2.8-1+b1),
+ libsigsegv2 (= 2.12-2),
+ libsmartcols1 (= 2.32.1-0.1),
+ libstdc++-8-dev (= 8.2.0-9),
+ libstdc++6 (= 8.2.0-9),
+ libsystemd0 (= 239-13),
+ libtinfo5 (= 6.1+20181013-1),
+ libtinfo6 (= 6.1+20181013-1),
+ libtool (= 2.4.6-6),
+ libtsan0 (= 8.2.0-9),
+ libubsan0 (= 7.3.0-30),
+ libubsan1 (= 8.2.0-9),
+ libudev1 (= 239-13),
+ libunistring0 (= 0.9.6+really0.9.3-0.1),
+ libuuid1 (= 2.32.1-0.1),
+ libxml2 (= 2.9.8-1),
+ linux-libc-dev (= 4.18.20-2),
+ login (= 1:4.5-1.1),
+ m4 (= 1.4.18-2),
+ make (= 4.2.1-1.2),
+ man-db (= 2.8.4-3),
+ mawk (= 1.3.3-17),
+ ncurses-base (= 6.1+20181013-1),
+ ncurses-bin (= 6.1+20181013-1),
+ patch (= 2.7.6-3),
+ perl (= 5.28.1-1),
+ perl-base (= 5.28.1-1),
+ perl-modules-5.28 (= 5.28.1-1),
+ po-debconf (= 1.0.21),
+ readline-common (= 7.0-5),
+ sed (= 4.5-2),
+ sensible-utils (= 0.0.12),
+ sysvinit-utils (= 2.92~beta-2),
+ tar (= 1.30+dfsg-3),
+ util-linux (= 2.32.1-0.1),
+ xz-utils (= 5.2.4-1),
+ zlib1g (= 1:1.2.11.dfsg-1)
+Environment:
+ AR="xiar"
+ CC="ccache icc"
+ CPP="ccache icc -E"
+ CXX="ccache icpc"
+ DEB_BUILD_OPTIONS="nocheck nodoc parallel=8"
+ DEB_BUILD_PROFILES="nobiarch nocheck nodoc"
+ DEB_CFLAGS_SET="-g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security"
+ DEB_CXXFLAGS_SET="-g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security"
+ DEB_FCFLAGS_SET="-g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -fstack-protector-strong -march=native -pipe -fstack-security-check"
+ DEB_FFLAGS_SET="-g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -fstack-protector-strong -march=native -pipe -fstack-security-check"
+ DEB_LDFLAGS_SET="-Wl,-z,relro -Wl,--as-needed,--gc-sections,--relax"
+ DPKG_GENSYMBOLS_CHECK_LEVEL="1"
+ LANG="en_US.UTF-8"
+ LC_CTYPE="en_US.UTF-8"
+ LD="xild"
+ LD_LIBRARY_PATH="/opt/intel/lib/intel64_lin:/opt/intel/tbb/lib/intel64/gcc4.7"
+ SOURCE_DATE_EPOCH="1533988015"

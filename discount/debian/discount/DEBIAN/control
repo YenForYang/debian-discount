@@ -1,0 +1,17 @@
+Package: discount
+Version: 2.2.4-1
+Architecture: amd64
+Maintainer: Alessandro Ghedini <ghedo@debian.org>
+Installed-Size: 158
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:3.0), libmarkdown2 (= 2.2.4-1)
+Conflicts: libtext-markdown-perl, markdown
+Section: text
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.pell.portland.or.us/~orc/Code/discount/
+Description: implementation of the Markdown markup language in C
+ Discount is an implementation of John Gruber's Markdown markup language. It
+ implements all of the language described in the Markdown syntax document and
+ passes the Markdown 1.0 test suite.
+ .
+ This package provides the discount executables.

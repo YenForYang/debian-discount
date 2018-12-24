@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+CFLAGS += $(dpkg-buildflags --get CPPFLAGS)
+
+override_dh_auto_configure:
+	./configure.sh --shared                     \
+		--prefix=/usr                           \
+		--libdir=/usr/lib/$(DEB_HOST_MULTIARCH) \
+		--with-id-anchor                        \
+		--with-github-tags                      \
+		--with-fenced-code                      \
+		--with-dl=both                          \
+		--github-checkbox                       \
+		--debian-glitch
+
+override_dh_auto_install:
+	dh_install

@@ -1,0 +1,6 @@
+discount-dbgsym_2.2.4-1_amd64.deb debug optional automatic=yes
+discount_2.2.4-1_amd64.buildinfo text optional
+discount_2.2.4-1_amd64.deb text optional
+libmarkdown2-dbgsym_2.2.4-1_amd64.deb debug optional automatic=yes
+libmarkdown2-dev_2.2.4-1_amd64.deb libdevel optional
+libmarkdown2_2.2.4-1_amd64.deb libs optional

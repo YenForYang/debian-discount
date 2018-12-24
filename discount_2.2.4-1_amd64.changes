@@ -1,0 +1,47 @@
+Format: 1.8
+Date: Sat, 11 Aug 2018 12:46:55 +0100
+Source: discount
+Binary: discount libmarkdown2 libmarkdown2-dev
+Built-For-Profiles: nobiarch nocheck nodoc
+Architecture: amd64
+Version: 2.2.4-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Alessandro Ghedini <ghedo@debian.org>
+Changed-By: Alessandro Ghedini <ghedo@debian.org>
+Description:
+ discount   - implementation of the Markdown markup language in C
+ libmarkdown2 - implementation of the Markdown markup language in C (library)
+ libmarkdown2-dev - implementation of the Markdown markup language in C (dev files)
+Closes: 901912
+Changes:
+ discount (2.2.4-1) unstable; urgency=medium
+ .
+   * New upstream release
+     - Fix several heap buffer overflows as per CVE-2018-11468, CVE-2018-11503,
+       CVE-2018-11504 and CVE-2018-12495 (Closes: #901912)
+   * Update symbols file
+   * Bump Standards-Version to 4.2.0 (no changes needed)
+   * Drop 01_honour-build-flags.patch (not needed anymore)
+   * Enable github-style checkboxes in lists
+Checksums-Sha1:
+ 202a88fe2dc2b82907a2476a0e9564d1045869a3 33332 discount-dbgsym_2.2.4-1_amd64.deb
+ c939d9b2be8c6a0ee22a19a9616414d10cf3b962 6643 discount_2.2.4-1_amd64.buildinfo
+ 32b95dd3a949e6d40395d009a0d153e6b541282d 32104 discount_2.2.4-1_amd64.deb
+ 0d4d261e71dbc56d776a4b4c2e6a6785cae9bcfb 98168 libmarkdown2-dbgsym_2.2.4-1_amd64.deb
+ ce63ca287342fd4aaa97aba07f36685d638d8a79 6428 libmarkdown2-dev_2.2.4-1_amd64.deb
+ 04e80e917ec148ce69ddbf7d24187f687cbc17d2 100740 libmarkdown2_2.2.4-1_amd64.deb
+Checksums-Sha256:
+ d63cba158f390a3af02ec8667de6a343a46fd47b48053123f4b710d345a555c9 33332 discount-dbgsym_2.2.4-1_amd64.deb
+ 047214b46e685d7fd519a4ab51b521ed25d7b0a9aea1e9d73d2e7fe2095f2217 6643 discount_2.2.4-1_amd64.buildinfo
+ cd64a8517b7234041396afe6e3d6a48c3c1ee9c5449ef93c0d8923708c2d13c5 32104 discount_2.2.4-1_amd64.deb
+ a679dbbff3d8817b41719bab76edc1f245573de851cf459946f2f230f63ecf4c 98168 libmarkdown2-dbgsym_2.2.4-1_amd64.deb
+ 166e744784032f9c174fd3ef2302fa653475c9bb0f33e5f45104a36026e3a6a8 6428 libmarkdown2-dev_2.2.4-1_amd64.deb
+ 3feb895a26c492566d000f8b8c686d790ccd96efcc40c54a6f98cc4ace26e683 100740 libmarkdown2_2.2.4-1_amd64.deb
+Files:
+ a20c4ae5172643e3239edf79201d71ce 33332 debug optional discount-dbgsym_2.2.4-1_amd64.deb
+ 1d714beadb47eeb7279b40f8b6198eaf 6643 text optional discount_2.2.4-1_amd64.buildinfo
+ b4a8a5ed8917ac409c159af1418b7a08 32104 text optional discount_2.2.4-1_amd64.deb
+ 4d74e236b551dd2d9ae67f6cff69213e 98168 debug optional libmarkdown2-dbgsym_2.2.4-1_amd64.deb
+ 9de206de3edf10c1fa484594f3ad16ce 6428 libdevel optional libmarkdown2-dev_2.2.4-1_amd64.deb
+ 257e05e31cb68234d81bbbd07ed254d4 100740 libs optional libmarkdown2_2.2.4-1_amd64.deb

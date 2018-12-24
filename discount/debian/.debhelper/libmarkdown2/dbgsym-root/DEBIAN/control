@@ -1,0 +1,13 @@
+Package: libmarkdown2-dbgsym
+Source: discount
+Version: 2.2.4-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Alessandro Ghedini <ghedo@debian.org>
+Installed-Size: 116
+Depends: libmarkdown2 (= 2.2.4-1)
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libmarkdown2
+Build-Ids: f31ffaf40b89418cf248855de892f80af30fd518

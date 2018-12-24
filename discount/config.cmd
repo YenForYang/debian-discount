@@ -1,0 +1,2 @@
+#! /bin/sh
+CC='ccache icc' CFLAGS='-g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security ' LDFLAGS='-Wl,-z,relro -Wl,--as-needed,--gc-sections,--relax' ./configure.sh  '--shared' '--prefix=/usr' '--libdir=/usr/lib/x86_64-linux-gnu' '--with-id-anchor' '--with-github-tags' '--with-fenced-code' '--with-dl=both' '--github-checkbox' '--debian-glitch'

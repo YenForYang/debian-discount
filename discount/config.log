@@ -1,0 +1,224 @@
+[echo -n] works
+Configuring for [markdown]
+checking out the C compiler
+Front end time                       0.02 (CPU)       0.00 (elapsed)
+Back end time                        0.00 (CPU)       0.00 (elapsed)
+Total compilation time               0.02 (CPU)       0.00 (elapsed)
+validating CFLAGS=-g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security 
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.02 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.02 (CPU)       0.00 (elapsed)
+validating LDFLAGS=-Wl,-z,relro -Wl,--as-needed,--gc-sections,--relax
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.02 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.02 (CPU)       0.00 (elapsed)
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.02 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.02 (CPU)       0.00 (elapsed)
+-rwxrwxrwx 1 richard richard 29232 Dec 24 07:33 ngc16059
+-rw-r--r-- 1 richard richard    61 Dec 24 07:33 ngc16059.c
+-rw-rw-rw- 1 richard richard 21768 Dec 24 07:33 ngc16059.o
+Looking for cpp
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.00 (CPU)       0.00 (elapsed)
+Total compilation time               0.01 (CPU)       0.00 (elapsed)
+CPP=[ccache icc], CPP_PIPE=[-E -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security ]
+target=CPP, rest=ccache icc
+generating config.sed
+Front end time                       0.02 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.02 (CPU)       0.00 (elapsed)
+rm: cannot remove 'ngc16059.c': No such file or directory
+looking for install
+ (/usr/bin/install)
+ngc16059.c(1): warning #266: function "puts" declared implicitly
+  main() { puts("hello, sailor!"); }
+           ^
+
+Front end time                       0.01 (CPU)       0.00 (elapsed)
+Back end time                        0.00 (CPU)       0.00 (elapsed)
+Total compilation time               0.01 (CPU)       0.00 (elapsed)
+target=INSTALL, rest=/usr/bin/install
+target=INSTALL_PROGRAM, rest=/usr/bin/install -s -m 755
+target=INSTALL_DATA, rest=/usr/bin/install -m 444
+target=INSTALL_DIR, rest=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount/config.md
+target=PACKAGE_NAME, rest=libmarkdown
+target=PACKAGE_VERSION, rest=2.2.4
+Setting theme default --with-dl.
+Setting theme default --with-fenced-code.
+Setting theme default --with-id-anchor.
+Setting theme default --with-github-tags.
+target=GIT, rest=/usr/bin/git
+ngc16059.c(1): warning #2621: attribute "__destructor__" does not apply here
+  extern int thing  __attribute__((__destructor__));
+                                   ^
+
+Front end time                       0.00 (CPU)       0.00 (elapsed)
+Back end time                        0.00 (CPU)       0.00 (elapsed)
+Total compilation time               0.01 (CPU)       0.00 (elapsed)
+checking for C compiler option to produce PIC 
+Front end time                       0.00 (CPU)       0.00 (elapsed)
+Back end time                        0.00 (CPU)       0.00 (elapsed)
+Total compilation time               0.01 (CPU)       0.00 (elapsed)
+(-fPIC)
+find is /usr/bin/find
+target=FIND, rest=/usr/bin/find
+/bin/ln exists, and ln -s works
+target=LN_S, rest=/bin/ln -s
+checking whether the C compiler can build shared libraries 
+Front end time                       0.00 (CPU)       0.00 (elapsed)
+Back end time                        0.00 (CPU)       0.00 (elapsed)
+Total compilation time               0.01 (CPU)       0.00 (elapsed)
+target=LD_LIBRARY_PATH, rest=LD_LIBRARY_PATH
+Front end time                       0.00 (CPU)       0.00 (elapsed)
+Back end time                        0.00 (CPU)       0.00 (elapsed)
+Total compilation time               0.01 (CPU)       0.00 (elapsed)
+(yes; -shared)
+target=AR, rest=/usr/bin/ar
+target=RANLIB, rest=/usr/bin/ranlib
+target=PKGCONFIG, rest=/usr/bin/pkg-config
+target=MK_PKGCONFIG, rest=
+checking for "volatile" keyword
+checking for "const" keyword
+Checking for "inline" keyword
+defining WORD & DWORD scalar types
+ngc16059.c(14): warning #1193: standard requires that parameter "argc" be given a type by a subsequent declaration ("int" assumed)
+  main(argc, argv)
+       ^
+
+Front end time                       0.02 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.03 (CPU)       0.00 (elapsed)
+OK!OK!Front end time                       0.01 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.02 (CPU)       0.00 (elapsed)
+looking for header libgen.h
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.01 (CPU)       0.00 (elapsed)
+ (found)
+looking for header stdlib.h
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.02 (CPU)       0.00 (elapsed)
+Total compilation time               0.02 (CPU)       0.00 (elapsed)
+ (found)
+looking for the alloca function
+Front end time                       0.01 (CPU)       0.00 (elapsed)
+Back end time                        0.00 (CPU)       0.00 (elapsed)
+Total compilation time               0.01 (CPU)       0.00 (elapsed)
+looking for header sys/types.h
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.01 (CPU)       0.00 (elapsed)
+ (found)
+looking for header pwd.h
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.01 (CPU)       0.00 (elapsed)
+ (found)
+looking for the getpwuid function
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.00 (CPU)       0.00 (elapsed)
+Back end time                        0.00 (CPU)       0.00 (elapsed)
+Total compilation time               0.01 (CPU)       0.00 (elapsed)
+looking for header sys/stat.h
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.01 (CPU)       0.00 (elapsed)
+ (found)
+looking for the stat function
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.00 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.01 (CPU)       0.00 (elapsed)
+special file macros in sys/stat.h:
+ngc16059.c(3): warning #1193: standard requires that parameter "argc" be given a type by a subsequent declaration ("int" assumed)
+  main(argc, argv)
+       ^
+
+Front end time                       0.01 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.02 (CPU)       0.00 (elapsed)
+ S_ISSOCK
+ngc16059.c(3): warning #1193: standard requires that parameter "argc" be given a type by a subsequent declaration ("int" assumed)
+  main(argc, argv)
+       ^
+
+Front end time                       0.01 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.02 (CPU)       0.00 (elapsed)
+ S_ISCHR
+ngc16059.c(3): warning #1193: standard requires that parameter "argc" be given a type by a subsequent declaration ("int" assumed)
+  main(argc, argv)
+       ^
+
+Front end time                       0.01 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.02 (CPU)       0.00 (elapsed)
+ S_ISFIFO
+.
+looking for the srandom function
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.00 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.01 (CPU)       0.00 (elapsed)
+looking for the memset function
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.01 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.02 (CPU)       0.00 (elapsed)
+looking for the random function
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.00 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.01 (CPU)       0.00 (elapsed)
+looking for the strcasecmp function
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.00 (CPU)       0.00 (elapsed)
+Back end time                        0.00 (CPU)       0.00 (elapsed)
+Total compilation time               0.01 (CPU)       0.00 (elapsed)
+looking for the strncasecmp function
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.00 (CPU)       0.00 (elapsed)
+Back end time                        0.00 (CPU)       0.00 (elapsed)
+Total compilation time               0.01 (CPU)       0.00 (elapsed)
+looking for the fchdir function
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.00 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.01 (CPU)       0.00 (elapsed)
+target=THEME, rest=
+target=TABSTOP, rest=4
+target=AMALLOC, rest=
+target=H1TITLE, rest=
+looking for header malloc.h
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.02 (CPU)       0.00 (elapsed)
+ (found)
+target=LIBS, rest=
+target=DISTCLEAN, rest=rm -f
+target=GENERATED_FILES, rest=Makefile version.c mkdio.h libmarkdown.pc
+target=CC, rest=ccache icc -Wno-return-type -Wno-implicit-int
+target=CFLAGS, rest=-g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC
+target=LDFLAGS, rest=-Wl,-z,relro -Wl,--as-needed,--gc-sections,--relax
+target=CPPFLAGS, rest=-Wdate-time -D_FORTIFY_SOURCE=2
+target=srcdir, rest=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount
+target=prefix, rest=/usr
+target=exedir, rest=/usr/bin
+target=bindir, rest=/usr/bin
+target=sbindir, rest=/usr/sbin
+target=libdir, rest=/usr/lib/x86_64-linux-gnu
+target=libexec, rest=/usr/lib
+target=confdir, rest=/etc
+target=mandir, rest=/usr/share/man
+target=CONFIGURE_FILES, rest=config.cmd config.sub config.h config.mak config.sed config.md librarian.sh config.log
+sed is /bin/sed
+target=SED, rest=/bin/sed
+generating Makefile
+generating version.c
+generating mkdio.h
+generating libmarkdown.pc

@@ -1,0 +1,397 @@
+ dpkg-buildpackage -D -us -uc -ui -b -Jauto -Pnobiarch,nocheck,nodoc
+dpkg-buildpackage: info: source package discount
+dpkg-buildpackage: info: source version 2.2.4-1
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Alessandro Ghedini <ghedo@debian.org>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+dpkg-source: info: using patch list from debian/patches/series
+dpkg-source: info: applying 03_fix-typo.patch
+ fakeroot debian/rules clean
+dh clean
+   dh_clean
+FAKEROOTKEY=445258899 LD_LIBRARY_PATH=:/opt/intel/lib/intel64_lin:/opt/intel/tbb/lib/intel64/gcc4.7 LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libfakeroot/libfakeroot-sysv.so debian/rules clean
+ debian/rules build
+dh build
+   dh_update_autotools_config
+   dh_autoreconf
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory '/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount'
+./configure.sh --shared                     \
+	--prefix=/usr                           \
+	--libdir=/usr/lib/x86_64-linux-gnu \
+	--with-id-anchor                        \
+	--with-github-tags                      \
+	--with-fenced-code                      \
+	--with-dl=both                          \
+	--github-checkbox                       \
+	--debian-glitch
+Configuring for [markdown]
+checking the C compiler (ccache icc) oh ick, it looks like gcc
+CFLAGS="-g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security " are okay
+LDFLAGS="-Wl,-z,relro -Wl,--as-needed,--gc-sections,--relax" are okay
+Looking for cpp (using $CC -E as a cpp pipeline)
+looking for install (/usr/bin/install)
+Setting theme default --with-dl.
+Setting theme default --with-fenced-code.
+Setting theme default --with-id-anchor.
+Setting theme default --with-github-tags.
+Checking __attribute__((__destructor__)) (yes)
+checking for C compiler option to produce PIC (-fPIC)
+looking for find (/usr/bin/find)
+looking for "ln -s" (/bin/ln)
+checking whether the C compiler can build shared libraries (yes; -shared)
+looking for ar (/usr/bin/ar)
+looking for ranlib (/usr/bin/ranlib)
+looking for pkg-config (/usr/bin/pkg-config)
+checking for "volatile" keyword (found)
+checking for "const" keyword (found)
+Checking for "inline" keyword (found)
+defining WORD & DWORD scalar types
+looking for a reentrant basename (found)
+looking for header libgen.h (found)
+looking for header stdlib.h (found)
+looking for the alloca function (found in alloca.h)
+looking for header sys/types.h (found)
+looking for header pwd.h (found)
+looking for the getpwuid function (found)
+looking for header sys/stat.h (found)
+looking for the stat function (found)
+special file macros in sys/stat.h: S_ISSOCK S_ISCHR S_ISFIFO.
+looking for the srandom function (found)
+looking for the memset function (found)
+looking for the random function (found)
+looking for the strcasecmp function (found)
+looking for the strncasecmp function (found)
+looking for the fchdir function (found)
+looking for header malloc.h (found)
+looking for sed (/bin/sed)
+generating Makefile
+generating version.c
+generating mkdio.h
+generating libmarkdown.pc
+make[1]: Leaving directory '/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount'
+   dh_auto_build
+	make -j8 "INSTALL=install --strip-program=true"
+make[1]: Entering directory '/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount'
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -I. -c main.c
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -I. -c pgm_options.c
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -I. -c gethopt.c
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -I. -c notspecial.c
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2  -c -o mkdio.o mkdio.c
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2  -c -o markdown.o markdown.c
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2  -c -o dumptree.o dumptree.c
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2  -c -o generate.o generate.c
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.01 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.02 (CPU)       0.00 (elapsed)
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2  -c -o resource.o resource.c
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+gethopt.c(48): warning #1193: standard requires that parameter "val" be given a type by a subsequent declaration ("int" assumed)
+  hopterr(ctx,val)
+              ^
+
+Front end time                       0.03 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.05 (CPU)       0.00 (elapsed)
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2  -c -o docheader.o docheader.c
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+pgm_options.c(105): warning #2279: printf/scanf format not a string literal and no format arguments
+  		    fprintf(stderr, opts[i].off ? "disable " : "enable ");
+  		                                                        ^
+
+Front end time                       0.05 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       1.00 (elapsed)
+Total compilation time               0.07 (CPU)       1.00 (elapsed)
+ccache icc -Wno-return-type -Wno-implicit-int -I. -o branch tools/branch.c
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.05 (CPU)       0.00 (elapsed)
+Back end time                        0.02 (CPU)       1.00 (elapsed)
+Total compilation time               0.07 (CPU)       1.00 (elapsed)
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2  -c -o toc.o toc.c
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.06 (CPU)       1.00 (elapsed)
+Back end time                        0.02 (CPU)       0.00 (elapsed)
+Total compilation time               0.08 (CPU)       1.00 (elapsed)
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2  -c -o css.o css.c
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.07 (CPU)       1.00 (elapsed)
+Back end time                        0.03 (CPU)       0.00 (elapsed)
+Total compilation time               0.10 (CPU)       1.00 (elapsed)
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2  -c -o xml.o xml.c
+Front end time                       0.03 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.03 (CPU)       0.00 (elapsed)
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.10 (CPU)       1.00 (elapsed)
+Back end time                        0.10 (CPU)       0.00 (elapsed)
+Total compilation time               0.19 (CPU)       1.00 (elapsed)
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2  -c -o Csio.o Csio.c
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.07 (CPU)       0.00 (elapsed)
+Back end time                        0.02 (CPU)       0.00 (elapsed)
+Total compilation time               0.09 (CPU)       0.00 (elapsed)
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2  -c -o xmlpage.o xmlpage.c
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.10 (CPU)       1.00 (elapsed)
+Back end time                        0.13 (CPU)       0.00 (elapsed)
+Total compilation time               0.23 (CPU)       1.00 (elapsed)
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.06 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.07 (CPU)       0.00 (elapsed)
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2  -c -o basename.o basename.c
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2  -c -o emmatch.o emmatch.c
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.07 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.08 (CPU)       0.00 (elapsed)
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2  -c -o github_flavoured.o github_flavoured.c
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.07 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.08 (CPU)       0.00 (elapsed)
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2  -c -o setup.o setup.c
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.07 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.08 (CPU)       0.00 (elapsed)
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2 -Wl,-z,relro -Wl,--as-needed,--gc-sections,--relax  mktags.c   -o mktags
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.06 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.08 (CPU)       0.00 (elapsed)
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2  -c -o html5.o html5.c
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2  -c -o flags.o flags.c
+Front end time                       0.05 (CPU)       0.00 (elapsed)
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.06 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.07 (CPU)       0.00 (elapsed)
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2  -c -o mkd2html.o mkd2html.c
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.07 (CPU)       0.00 (elapsed)
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.06 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.07 (CPU)       0.00 (elapsed)
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2  -c -o theme.o theme.c
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.07 (CPU)       0.00 (elapsed)
+Back end time                        0.02 (CPU)       0.00 (elapsed)
+Total compilation time               0.09 (CPU)       0.00 (elapsed)
+ccache icc -Wno-return-type -Wno-implicit-int -I. -o echo tools/echo.c
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.01 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.01 (CPU)       0.00 (elapsed)
+ccache icc -Wno-return-type -Wno-implicit-int -I. -o cols tools/cols.c
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.07 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.08 (CPU)       0.00 (elapsed)
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -DBRANCH=`./branch` -DVERSION=\"`cat VERSION`\" -c version.c
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.07 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.08 (CPU)       0.00 (elapsed)
+tools/echo.c(6): warning #1193: standard requires that parameter "argc" be given a type by a subsequent declaration ("int" assumed)
+  main(argc, argv)
+       ^
+
+Front end time                       0.04 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.05 (CPU)       0.00 (elapsed)
+tools/cols.c(4): warning #1193: standard requires that parameter "argc" be given a type by a subsequent declaration ("int" assumed)
+  main(argc, argv)
+       ^
+
+Front end time                       0.04 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.04 (CPU)       0.00 (elapsed)
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+flags.c(70): warning #2279: printf/scanf format not a string literal and no format arguments
+  	    fprintf(f, htmlplease ? "<s>" : "!");
+  	                                       ^
+
+Front end time                       0.06 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.08 (CPU)       0.00 (elapsed)
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+mkd2html.c(86): warning #1193: standard requires that parameter "argc" be given a type by a subsequent declaration ("int" assumed)
+  main(argc, argv)
+       ^
+
+Front end time                       0.06 (CPU)       0.00 (elapsed)
+Back end time                        0.02 (CPU)       0.00 (elapsed)
+Total compilation time               0.09 (CPU)       0.00 (elapsed)
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.01 (CPU)       0.00 (elapsed)
+Back end time                        0.00 (CPU)       0.00 (elapsed)
+Total compilation time               0.01 (CPU)       0.00 (elapsed)
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+theme.c(529): warning #1193: standard requires that parameter "argc" be given a type by a subsequent declaration ("int" assumed)
+  main(argc, argv)
+       ^
+
+Front end time                       0.10 (CPU)       0.00 (elapsed)
+Back end time                        0.05 (CPU)       0.00 (elapsed)
+Total compilation time               0.15 (CPU)       0.00 (elapsed)
+./mktags > blocktags
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -Wdate-time -D_FORTIFY_SOURCE=2  -c -o tags.o tags.c
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.04 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.05 (CPU)       0.00 (elapsed)
+./librarian.sh make libmarkdown VERSION mkdio.o markdown.o dumptree.o generate.o resource.o docheader.o version.o toc.o css.o xml.o Csio.o xmlpage.o basename.o emmatch.o github_flavoured.o setup.o tags.o html5.o flags.o 
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -L. -o markdown main.o pgm_options.o gethopt.o notspecial.o -lmarkdown 
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -L. -o mkd2html mkd2html.o pgm_options.o gethopt.o notspecial.o -lmarkdown 
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -L. -o makepage makepage.c pgm_options.o gethopt.o notspecial.o -lmarkdown 
+ccache icc -Wno-return-type -Wno-implicit-int -I. -g -O2 -fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=. -Wformat -march=native -pipe -fstack-security-check -Wformat-security  -fPIC -L. -o theme theme.o pgm_options.o gethopt.o notspecial.o -lmarkdown 
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+icc: command line warning #10006: ignoring unknown option '-fdebug-prefix-map=/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount=.'
+Front end time                       0.04 (CPU)       0.00 (elapsed)
+Back end time                        0.01 (CPU)       0.00 (elapsed)
+Total compilation time               0.06 (CPU)       0.00 (elapsed)
+ipo: warning #11021: unresolved __open_missing_mode
+        Referenced in /tmp/ipo_iccze5GNm.o
+ipo: warning #11021: unresolved __open_too_many_args
+        Referenced in /tmp/ipo_iccze5GNm.o
+make[1]: Leaving directory '/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount'
+   dh_auto_test
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   debian/rules override_dh_auto_install
+make[1]: Entering directory '/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount'
+dh_install
+make[1]: Leaving directory '/dev/shm/systemd/test/deps/test/lvm2/tmp/corosync/tmp/libqb/libsubunit-dev/others/libmarkdown2/discount'
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_strip
+   dh_makeshlibs
+dpkg-gensymbols: warning: some new symbols appeared in the symbols file: see diff output below
+dpkg-gensymbols: warning: debian/libmarkdown2/DEBIAN/symbols doesn't match completely debian/libmarkdown2.symbols
+--- debian/libmarkdown2.symbols (libmarkdown2_2.2.4-1_amd64)
++++ dpkg-gensymbolssY5qAr	2018-12-24 07:34:35.128006549 +0100
+@@ -14,11 +14,42 @@
+  ___mkd_initmmiot@Base 2.0.6
+  ___mkd_reparse@Base 2.0.6
+  ___mkd_tidy@Base 2.0.6
++ __cacheSize@Base 2.2.4-1
++ __intel_avx_rep_memcpy@Base 2.2.4-1
++ __intel_memcpy@Base 2.2.4-1
++ __intel_mic_avx512f_memcpy@Base 2.2.4-1
++ __intel_new_memcpy@Base 2.2.4-1
++ __intel_security_check_cookie@Base 2.2.4-1
++ __intel_security_cookie@Base 2.2.4-1
++ __intel_security_init_cookie@Base 2.2.4-1
++ __intel_sse4_strchr@Base 2.2.4-1
++ __intel_sse4_strcpy@Base 2.2.4-1
++ __intel_sse4_strdup@Base 2.2.4-1
++ __intel_sse4_strend@Base 2.2.4-1
++ __intel_sse4_strlen@Base 2.2.4-1
++ __intel_sse4_strncat@Base 2.2.4-1
++ __intel_sse4_strncmp@Base 2.2.4-1
++ __intel_ssse3_memcpy@Base 2.2.4-1
++ __intel_ssse3_memmove@Base 2.2.4-1
++ __intel_ssse3_rep_memcpy@Base 2.2.4-1
++ __intel_ssse3_rep_memmove@Base 2.2.4-1
+  __mkd_enqueue@Base 2.1.5
+  __mkd_footsort@Base 2.0.6
+  __mkd_io_strget@Base 2.1.5
+  __mkd_new_Document@Base 2.1.5
+  __mkd_trim_line@Base 2.2.4
++ _intel_fast_memcpy.A@Base 2.2.4-1
++ _intel_fast_memcpy.J@Base 2.2.4-1
++ _intel_fast_memcpy.M@Base 2.2.4-1
++ _intel_fast_memcpy.P@Base 2.2.4-1
++ _intel_fast_memcpy.V@Base 2.2.4-1
++ _intel_fast_memcpy.Z@Base 2.2.4-1
++ _intel_fast_memcpy.a@Base 2.2.4-1
++ _intel_fast_memcpy@Base 2.2.4-1
++ _intel_fast_memmove.A@Base 2.2.4-1
++ _intel_fast_memmove.M@Base 2.2.4-1
++ _intel_fast_memmove.P@Base 2.2.4-1
++ _intel_fast_memmove@Base 2.2.4-1
+  extratags@Base 2.1.1.3
+  gfm_in@Base 2.1.5
+  gfm_populate@Base 2.1.5
+   dh_shlibdeps
+dpkg-shlibdeps: warning: deprecated use of LD_LIBRARY_PATH with private library directory which interferes with cross-building, please use -l option instead
+dpkg-shlibdeps: warning: deprecated use of LD_LIBRARY_PATH with private library directory which interferes with cross-building, please use -l option instead
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libmarkdown2/usr/lib/x86_64-linux-gnu/libmarkdown.so.2.2.4 was not linked against libgcc_s.so.1 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libmarkdown2/usr/lib/x86_64-linux-gnu/libmarkdown.so.2.2.4 was not linked against libdl.so.2 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libmarkdown2/usr/lib/x86_64-linux-gnu/libmarkdown.so.2.2.4 was not linked against libpthread.so.0 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/discount/usr/bin/mkd2html debian/discount/usr/bin/makepage debian/discount/usr/bin/theme debian/discount/usr/bin/markdown were not linked against libgcc_s.so.1 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/discount/usr/bin/mkd2html debian/discount/usr/bin/makepage debian/discount/usr/bin/theme debian/discount/usr/bin/markdown were not linked against libdl.so.2 (they use none of the library's symbols)
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'discount' in '../discount_2.2.4-1_amd64.deb'.
+dpkg-deb: building package 'discount-dbgsym' in '../discount-dbgsym_2.2.4-1_amd64.deb'.
+dpkg-deb: building package 'libmarkdown2' in '../libmarkdown2_2.2.4-1_amd64.deb'.
+dpkg-deb: building package 'libmarkdown2-dbgsym' in '../libmarkdown2-dbgsym_2.2.4-1_amd64.deb'.
+dpkg-deb: building package 'libmarkdown2-dev' in '../libmarkdown2-dev_2.2.4-1_amd64.deb'.
+FAKEROOTKEY=1119439209 LD_LIBRARY_PATH=:/opt/intel/lib/intel64_lin:/opt/intel/tbb/lib/intel64/gcc4.7 LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libfakeroot/libfakeroot-sysv.so debian/rules binary
+ dpkg-genbuildinfo --build=binary
+ dpkg-genchanges --build=binary >../discount_2.2.4-1_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-source: info: unapplying 03_fix-typo.patch
+dpkg-buildpackage: info: binary-only upload (no source included)
+Now running lintian discount_2.2.4-1_amd64.changes ...
+E: libmarkdown2: symbols-file-contains-current-version-with-debian-revision on symbol __cacheSize@Base and 30 others
+W: discount: hardening-no-pie usr/bin/makepage
+W: discount: hardening-no-pie usr/bin/markdown
+W: discount: hardening-no-pie usr/bin/mkd2html
+W: discount: hardening-no-pie usr/bin/theme
+W: discount: binary-without-manpage usr/bin/makepage
+W: discount: binary-without-manpage usr/bin/markdown
+W: discount: binary-without-manpage usr/bin/mkd2html
+W: discount: binary-without-manpage usr/bin/theme
+Finished running lintian.
